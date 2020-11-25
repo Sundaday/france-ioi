@@ -1,0 +1,19 @@
+
+
+import algorea.Scanner;
+import static java.lang.Math.*;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbPersonnes = entrée.nextInt();
+                int nbFruits = entrée.nextInt();
+
+                if (nbFruits % nbPersonnes == 0) {
+                    System.out.println("oui");
+                } else {
+                    System.out.println("non");
+        }
+    }
+}

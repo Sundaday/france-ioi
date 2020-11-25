@@ -1,0 +1,28 @@
+package com.sundaday.jeu;
+
+import java.util.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbSecret = entrée.nextInt();
+        int nbProposition = entrée.nextInt();
+        int nbEssais = 1;
+
+        while (nbProposition != nbSecret) {
+            if (nbProposition < nbSecret) {
+                System.out.println("c'est plus");
+                nbEssais += 1;
+            } else {
+                System.out.println("c'est moins");
+                nbEssais += 1;
+                nbProposition =entrée.nextInt();
+
+
+            }
+        }System.out.println("Nombre d'essais nécessaires :");
+        System.out.println(nbEssais);
+    }
+}

@@ -1,0 +1,21 @@
+import algorea.Scanner;
+
+class Main {
+
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbEmplacements = entrée.nextInt();
+        int[] listeMarchands = new int[nbEmplacements];
+
+        for (int emplacements = 0; emplacements < nbEmplacements; emplacements++) {
+            int numMarchand = entrée.nextInt();
+            listeMarchands[numMarchand] = emplacements;
+        }
+
+        for (int marchand = 0; marchand < nbEmplacements; marchand++) {
+            System.out.println(listeMarchands[marchand]);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+
+
+import algorea.Scanner;
+import static java.lang.Math.*;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        float taxeActuelle=entrée.nextFloat();
+        float taxeFuture=entrée.nextFloat();
+        float prixActuel=entrée.nextFloat();
+        double prixFutur = 0;
+
+        prixFutur=((double)round(((prixActuel/(1+taxeActuelle/100))*(1+taxeFuture/100))*100))/100;
+
+        System.out.println(prixFutur);
+    }
+}

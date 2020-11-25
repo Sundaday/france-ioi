@@ -1,0 +1,24 @@
+
+import algorea.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbDeplacements = entrée.nextInt();
+        int[] deplacementsIn = {0, 2, 1, 3, 5, 4};
+        int[] deplacementsOut = new int[nbDeplacements];
+        int compteurFinal = nbDeplacements;
+        for (int i = 0; i < nbDeplacements; i++) {
+            int deplacements = entrée.nextInt();
+            deplacementsOut[i] = deplacementsIn[deplacements];
+        }
+
+
+        for (int i = 0; i < nbDeplacements; i++) {
+            compteurFinal -= 1;
+            System.out.println(deplacementsOut[compteurFinal]);
+        }
+    }
+}

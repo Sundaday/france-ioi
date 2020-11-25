@@ -1,0 +1,29 @@
+
+import algorea.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int numDisparu = entrée.nextInt();
+        int tailleRegistre = entrée.nextInt();
+        boolean parti = false;
+
+        for (int i = 0; i < tailleRegistre; i++) {
+            int numRegistre = entrée.nextInt();
+            if (numRegistre == numDisparu) {
+                parti = true;
+            }
+
+        }
+            if (parti= true) {
+                System.out.println("Sorti de la ville");
+            } else {
+                System.out.println("Encore dans la ville");
+            }
+        }
+}
+
+
+

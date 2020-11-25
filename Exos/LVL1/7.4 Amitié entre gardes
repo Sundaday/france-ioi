@@ -1,0 +1,28 @@
+
+import algorea.Scanner;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int dateDebutSoldat1 = entrée.nextInt();
+        int dateFinSoldat1 = entrée.nextInt();
+        int dateDebutSoldat2 = entrée.nextInt();
+        int dateFinSoldat2 = entrée.nextInt();
+
+        if (dateDebutSoldat1 <= dateDebutSoldat2 && dateFinSoldat1 >= dateDebutSoldat2 || dateDebutSoldat2 <= dateDebutSoldat1 && dateFinSoldat2 >= dateDebutSoldat1) {
+            System.out.println("Amis");
+        } else {
+            System.out.println("Pas amis");
+
+        }
+    }
+}
+
+
+
+
+
+
+
+

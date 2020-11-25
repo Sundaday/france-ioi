@@ -1,0 +1,21 @@
+
+
+import algorea.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int totalDepenses = 0;
+        int depense = 0;
+
+        while (depense != -1) {
+            totalDepenses += depense;
+            depense = entrée.nextInt();
+
+
+        }
+    System.out.println(totalDepenses);
+    }
+}

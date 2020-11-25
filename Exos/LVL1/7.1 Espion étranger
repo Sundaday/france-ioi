@@ -1,0 +1,30 @@
+package com.sundaday.jeu;
+import java.util.Scanner;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int dateDebut = entrée.nextInt();
+        int dateFin = entrée.nextInt();
+        int nbEntree = entrée.nextInt();
+        int result = 0;
+
+        for (int i = 0; i < nbEntree; i++) {
+             int dateEntree = entrée.nextInt();
+
+            if (dateDebut <= dateEntree && dateEntree <= dateFin) {
+                result = result + 1  ;
+            }
+        }
+        System.out.println(result);
+    }
+}
+
+
+
+
+
+
+
+

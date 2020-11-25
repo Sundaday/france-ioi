@@ -1,0 +1,20 @@
+
+
+
+import algorea.Scanner;
+
+class Main {
+
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        String nomA = entrée.nextLine();
+        String nomB = entrée.next();
+        if (nomA.compareTo(nomB) < 0) {
+            System.out.println(nomA);
+
+        } else if (nomB.compareTo(nomA)< 0){
+            System.out.println(nomB);
+        }
+    }
+}

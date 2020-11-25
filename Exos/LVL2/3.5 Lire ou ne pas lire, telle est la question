@@ -1,22 +1,19 @@
-package com.sundaday.jeu;
 
 
-import java.util.Scanner;
+import algorea.Scanner;
 
 class Main {
 
     static Scanner entrée = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int nbPersonnes = entrée.nextInt();
-        int longMax = entrée.nextInt();
-
-        for (int i = 0; i < nbPersonnes; i++) {
+        int nbLivres = entrée.nextInt();
+        int longMax= 0;
+        for (int i = 0; i < nbLivres; i++) {
             String titre = entrée.nextLine();
             int longeur = titre.length();
-            if (longeur > longMax) {
+            if (longeur > long ) {
                 System.out.println(titre);
-
             }
         }
     }

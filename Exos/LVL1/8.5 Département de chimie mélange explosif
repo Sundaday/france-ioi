@@ -1,0 +1,29 @@
+package com.sundaday.jeu;
+
+import java.util.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int totalMesures = entrée.nextInt();
+        int tempMin = entrée.nextInt();
+        int tempMax = entrée.nextInt();
+        int nbMesures = 1;
+        int temp = entrée.nextInt();
+
+        while (nbMesures <= totalMesures && temp >= tempMin && temp <= tempMax) {
+            System.out.println("Rien à signaler");
+            if (nbMesures != totalMesures) {
+                temp = entrée.nextInt();
+                nbMesures += 1;
+
+
+            }
+        }
+        if (temp < tempMin || temp > tempMax) {
+            System.out.println("Alerte !!");
+        }
+    }
+}

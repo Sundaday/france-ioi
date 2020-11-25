@@ -1,0 +1,24 @@
+
+
+import algorea.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbProduits = entrée.nextInt();
+        int nbPersonnes = entrée.nextInt();
+        int[] listeProduit = new int[nbProduits];
+
+        for (int i = 0; i < nbPersonnes; i++) {
+
+            int produitPref = entrée.nextInt();
+            listeProduit[produitPref] +=1;
+
+        }
+        for (int produitPref = 0; produitPref < nbProduits; produitPref++) {
+            System.out.println(listeProduit[produitPref]);
+        }
+    }
+}

@@ -1,0 +1,25 @@
+import algorea.Scanner;
+
+
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int population=entrée.nextInt();
+        int jour=1;
+        int malades=1;
+
+        while (malades<population){
+        malades+=malades*2;
+        jour+=1;
+        }
+        System.out.println(jour);
+    }
+}
+
+
+
+
+

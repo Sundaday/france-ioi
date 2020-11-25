@@ -1,0 +1,33 @@
+package com.sundaday.jeu;
+import java.util.Scanner;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int xMin = entrée.nextInt();
+        int xMax = entrée.nextInt();
+        int yMin = entrée.nextInt();
+        int yMax = entrée.nextInt();
+        int nbMaison = entrée.nextInt();
+        int nbMaisonTotal = 0;
+
+        for (int i = 0; i < nbMaison; i++) {
+            int xMaison = entrée.nextInt();
+            int yMaison = entrée.nextInt();
+
+            if (xMin <= xMaison && xMaison <= xMax && yMin <= yMaison && yMaison <= yMax ) {
+                nbMaisonTotal += 1  ;
+            }
+        }
+        System.out.println(nbMaisonTotal);
+    }
+}
+
+
+
+
+
+
+
+

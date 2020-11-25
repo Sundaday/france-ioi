@@ -1,0 +1,21 @@
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int nbrJ = entrée.nextInt();
+        int uneJournee = 0;
+        int max = 0;
+
+        if (nbrJ > 0) {
+
+            for (int i = 1; i <= nbrJ; i++) {
+
+                uneJournee = entrée.nextInt();
+                if (uneJournee > max) {
+                    max = uneJournee;
+                }
+            }
+            System.out.println(max);
+        }
+    }
+}

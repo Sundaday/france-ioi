@@ -1,0 +1,21 @@
+
+
+import algorea.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbOpérations = entrée.nextInt();
+        int[] stock = new int[11];
+        for (int i = 0; i < nbOpérations; i++) {
+            int ingrédient = entrée.nextInt();
+            stock[ingrédient] += entrée.nextInt();
+
+        }
+        for (int ingredient = 1; ingredient < 11; ingredient++) {
+            System.out.println(stock[ingredient]);
+        }
+    }
+}

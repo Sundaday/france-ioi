@@ -1,0 +1,17 @@
+
+
+import algorea.Scanner;
+import static java.lang.Math.*;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        float secondes = entrée.nextFloat();
+        double vitesse = 0.34029;
+
+        double distance =round(secondes*vitesse);
+
+        System.out.println((int)distance);
+    }
+}

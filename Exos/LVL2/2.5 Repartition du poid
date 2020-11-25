@@ -1,0 +1,28 @@
+import algorea.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbCharrettes = entrée.nextInt();
+        int poidsTotal = 0;
+        int[] indexCharrette = new int[nbCharrettes];
+
+        for (int numCharrettes = 0; numCharrettes < nbCharrettes; numCharrettes++) {
+
+            float poids = entrée.nextFloat();
+            indexCharrette[numCharrettes] += poids;
+            poidsTotal += poids;
+
+
+        }
+        int diviseur = poidsTotal / nbCharrettes;
+        for (int numCharrettes = 0; numCharrettes < nbCharrettes; numCharrettes++) {
+
+
+            indexCharrette[numCharrettes] = diviseur - indexCharrette[numCharrettes];
+            System.out.println(indexCharrette[numCharrettes]);
+        }
+    }
+}

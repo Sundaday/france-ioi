@@ -1,0 +1,23 @@
+package com.sundaday.jeu;
+import java.util.Scanner;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int monteeDescente = entrée.nextInt();
+        int resultMontee = 0;
+        int resultDescente = 0;
+
+        for (int i = 1; i <= monteeDescente; i++) {
+            int variationAlt = entrée.nextInt();
+                if (variationAlt > 0) {
+                    resultMontee = resultMontee + variationAlt;
+
+                } else if (variationAlt < 0) {
+                    resultDescente = resultDescente + -variationAlt;
+            }
+        }
+        System.out.println(resultMontee + "\n" + resultDescente);
+    }
+}

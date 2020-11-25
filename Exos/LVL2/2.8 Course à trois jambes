@@ -1,0 +1,30 @@
+
+
+import java.util.Arrays;
+
+import algorea.Scanner;
+
+class Main {
+
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbParticipants = entrée.nextInt();
+        int[] listeEntiers = new int[nbParticipants];
+
+        for (int entiers = 0; entiers < nbParticipants; entiers++) {
+            listeEntiers[entiers] = entrée.nextInt();
+        }
+
+
+        Arrays.sort(listeEntiers);
+
+        int maxListe = nbParticipants - 1;
+
+        for (int i = 0; i < nbParticipants / 2; i++) {
+            System.out.println(String.valueOf(listeEntiers[i] + " " + (listeEntiers[maxListe])));
+            maxListe -= 1;
+        }
+    }
+}

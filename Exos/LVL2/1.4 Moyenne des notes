@@ -1,0 +1,21 @@
+package com.sundaday.jeu;
+
+import java.util.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        double nbNotes = entrée.nextInt();
+        int noteTotal = 0;
+
+        for (int i = 0; i < nbNotes; i++) {
+            int note =entrée.nextInt();
+            noteTotal += note;
+
+
+        }
+        System.out.println(noteTotal / nbNotes);
+    }
+}

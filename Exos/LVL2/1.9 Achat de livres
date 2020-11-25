@@ -1,0 +1,17 @@
+
+
+import algorea.Scanner;
+import static java.lang.Math.*;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int argentDispo=entrée.nextInt();
+        int prix=entrée.nextInt();
+
+        int nbLivres=argentDispo / prix;
+
+        System.out.println(nbLivres);
+    }
+}

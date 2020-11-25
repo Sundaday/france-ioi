@@ -1,0 +1,21 @@
+package com.sundaday.jeu;
+
+import java.util.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int maxPierres=entrée.nextInt();
+        int pierresUtilisées=0;
+        int cotés=0;
+
+        while (maxPierres!=0 && pierresUtilisées+(cotés+1)*(cotés+1)<=maxPierres) {
+            cotés += 1;
+            pierresUtilisées += cotés * cotés;
+        }
+        System.out.println(cotés);
+        System.out.println(pierresUtilisées);
+    }
+}

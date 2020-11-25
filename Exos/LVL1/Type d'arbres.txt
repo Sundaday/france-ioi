@@ -1,0 +1,21 @@
+package com.sundaday.jeu;
+import java.util.Scanner;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int hauteur = entrée.nextInt();
+        int nbFiloles = entrée.nextInt();
+
+        if (hauteur <= 5 && nbFiloles >= 8) {
+            System.out.println("Tinuviel");
+        } else if (hauteur >= 10 && nbFiloles >= 10) {
+            System.out.println("Calaelen");
+        } else if (hauteur <= 8 && nbFiloles <= 5) {
+            System.out.println("Falarion");
+        } else if (hauteur >= 12 && nbFiloles <= 7) {
+            System.out.println("Dorthonion");
+        }
+    }
+}

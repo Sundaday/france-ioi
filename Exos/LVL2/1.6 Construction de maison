@@ -1,0 +1,17 @@
+import algorea.Scanner;
+import static java.lang.Math.*;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        float cimentNécessaire=entrée.nextFloat();
+        int sac=60;
+        int prix=45;
+        double prixTotal=0;
+
+        prixTotal=prix*ceil(cimentNécessaire/sac);
+
+        System.out.println((int)ceil(prixTotal));
+    }
+}

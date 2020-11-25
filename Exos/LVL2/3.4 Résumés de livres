@@ -1,0 +1,23 @@
+
+
+
+import algorea.Scanner;
+
+class Main {
+
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int nbLivres = entrée.nextInt();
+        int longueurMinimale = entrée.nextInt();
+
+        for (int i = 0; i < nbLivres; i++) {
+            String titre = entrée.nextLine();
+            String resume = entrée.nextLine();
+            int longeur = resume.length();
+            if (longeur < longueurMinimale) {
+                System.out.println(titre);
+            }
+        }
+    }
+}

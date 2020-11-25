@@ -1,0 +1,30 @@
+package com.sundaday.jeu;
+
+import java.util.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int dateDébut = entrée.nextInt();
+        int dateFin = entrée.nextInt();
+        int nbInvités = entrée.nextInt();
+        int nbSuspects = 0;
+
+        for (int i = 0; i < nbInvités; i++) {
+            int dateArrivée = entrée.nextInt();
+            int dateDépart = entrée.nextInt();
+            boolean innocent = (dateDépart < dateDébut) || (dateArrivée > dateFin);
+            if (!innocent) {
+                nbSuspects += 1;
+            }
+
+
+        }System.out.println(nbSuspects);
+    }
+}
+
+
+
+

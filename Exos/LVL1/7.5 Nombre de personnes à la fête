@@ -1,0 +1,29 @@
+
+
+import algorea.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbPersonne = entrée.nextInt();
+        int present = 0;
+        int max_present = 0;
+
+        for (int i = 0; i < nbPersonne * 2; i++) {
+            int personne = entrée.nextInt();
+            if (personne > 0) {
+                present++;
+            }if (personne < 0) {
+                present--;
+            }if (personne > max_present) {
+                    max_present = present;
+
+            }
+        }
+        System.out.println(max_present);
+    }
+}
+
+

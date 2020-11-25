@@ -1,0 +1,22 @@
+
+
+
+import algorea.Scanner;
+
+class Main {
+
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int[] quantité = {9, 5, 12, 15, 7, 42, 13, 10, 1, 20};
+        int coutTotal = 0;
+        for (int ingrédient = 0; ingrédient < 10; ingrédient++) {
+            int poids = entrée.nextInt();
+            coutTotal += poids * quantité[ingrédient];
+
+
+        }
+        System.out.println(coutTotal);
+    }
+}

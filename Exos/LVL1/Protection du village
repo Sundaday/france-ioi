@@ -1,0 +1,33 @@
+package com.sundaday.jeu;
+import java.util.Scanner;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbMaison = entrée.nextInt();
+        int longeur = 0;
+        int largeur = 0;
+
+        if (nbMaison > 0) {
+            for(int i = 0; i < nbMaison; i++){
+            int x = entrée.nextInt();
+            int y = entrée.nextInt();
+            if(0< x && y < 1000000){
+                  longeur = x;
+                  largeur = y;
+            }
+            int perimetre = (2*longeur)+(2*largeur);
+            System.out.println(perimetre);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

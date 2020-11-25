@@ -1,0 +1,31 @@
+
+
+
+
+import java.util.Arrays;
+
+import algorea.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbHabitants = entrée.nextInt();
+        int[] listeRevenus = new int[nbHabitants];
+
+        for (int numHabitants = 0; numHabitants < nbHabitants; numHabitants++) {
+            int revenu = entrée.nextInt();
+            listeRevenus[numHabitants] = revenu;
+        }
+        Arrays.sort(listeRevenus);
+
+        if (nbHabitants % 2 == 1) {
+            int moyenneImpaire = (nbHabitants - 1) / 2;
+            System.out.println(listeRevenus[moyenneImpaire]);
+        } else {
+            int moyennePaire = nbHabitants / 2;
+            System.out.println((listeRevenus[moyennePaire - 1] + (listeRevenus[moyennePaire])) / 2);
+        }
+    }
+}

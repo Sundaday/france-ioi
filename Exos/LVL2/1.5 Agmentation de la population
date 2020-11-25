@@ -1,0 +1,17 @@
+package com.sundaday.jeu;
+
+import java.util.Scanner;
+import static java.lang.Math.*;
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int population=entrée.nextInt();
+        float croissance=entrée.nextFloat();
+
+        population*=(1+croissance/100);
+
+        System.out.println(floor(population));
+    }
+}

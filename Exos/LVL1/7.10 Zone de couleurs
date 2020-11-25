@@ -1,0 +1,31 @@
+import algorea.Scanner;
+
+class Main {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbJetons = entrée.nextInt();
+
+        for (int i = 0; i < nbJetons; i++) {
+            int x = entrée.nextInt();
+            int y = entrée.nextInt();
+            boolean dansFeuille = x > 0 && x < 90 && y > 0 && y < 70;
+            boolean zoneJauneMilieu = x > 25 && x < 50 && y > 20 && y < 45;
+            if (!dansFeuille) {
+                System.out.println("En dehors de la feuille");
+            } else if (((x > 15 && x < 45) || (x > 60 && x < 85)) && y > 60) {
+                System.out.println("Dans une zone rouge");
+            } else if (!zoneJauneMilieu && x > 10 && x < 85 && y > 10 && y < 55) {
+                System.out.println("Dans une zone bleue");
+            } else {
+                System.out.println("Dans une zone jaune");
+            }
+        }
+    }
+}
+
+
+
+
+
